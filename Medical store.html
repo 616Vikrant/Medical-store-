@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+    <title>Medical Store Management</title>
+</head>
+<body>
+    <header>
+        <h1>Medical Store Management System</h1>
+    </header>
+    <main>
+        <section id="inventory">
+            <h2>Inventory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product ID</th>
+                        <th>Product Name</th>
+                        <th>Quantity</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="inventory-list">
+                    <!-- Inventory items will be dynamically added here -->
+                </tbody>
+            </table>
+        </section>
+        <section id="add-product">
+            <h2>Add Product</h2>
+            <form id="product-form">
+                <label for="product-name">Product Name:</label>
+                <input type="text" id="product-name" required>
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" required>
+                <button type="submit">Add Product</button>
+            </form>
+        </section>
+    </main>
+</body>
+</html>
